@@ -16,6 +16,13 @@
             background-image: linear-gradient(160deg, rgb(219, 50, 120),rgb(26,26,26));
             height: 100vh;
         }
+        @media screen and (max-width:600px){
+            .container{
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 
@@ -24,16 +31,16 @@
     <!-- place navbar here -->
   </header>
   <main>
-    <div class="conatiner">
+    <div class="container">
         <form action="">
-            <div class="row justify-content-center text-white p-5 m-0">
-                <div class="col-5 border border-white border-2 p-2 rounded" style="box-shadow: 6px 6px 30px -1px rgba(0,0,0,0.73);">
+            <div class="row justify-content-center text-white p-md-5 m-0 form">
+                <div class="col-md-6 border border-white border-2 p-2 rounded" style="box-shadow: 6px 6px 30px -1px rgba(0,0,0,0.73);">
                     <div class="row pb-3">
                         <div class="col-12">
                             <label class="text-center d-block fw-bold fs-2" style="text-shadow: 5px 2px 7px black;">Registration Form</label>
                         </div>
                     </div>
-                    <div class="row px-3 mt-2">
+                    <div class="row px-md-3 mt-2">
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">First Name</label>
@@ -47,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-3 mt-2">
+                    <div class="row px-md-3 mt-2">
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Birth Date</label>
@@ -68,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-3 mt-2">
+                    <div class="row px-md-3 mt-2">
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Email</label>
@@ -84,7 +91,7 @@
                     </div>
                     <div class="row my-2">
                         <div class="col-12">
-                            <div class="form-group mx-3">
+                            <div class="form-group mx-md-3">
                                 <label for="" class="form-label fs-5 fw-bold">Course Name</label>
                                 <select name="" id="" class="form-select" required>
                                     <option value="">--Select--</option>
@@ -96,10 +103,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-3 py-3">
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-outline-light border fw-bold">Submit</button>
-                            <button type="button" class="btn btn-outline-light border mx-3 fw-bold" data-bs-toggle="modal" data-bs-target="#myModal">Read More</button>
+                    <div class="row px-md-3 py-3">
+                        <div class="col">
+                            <div class="row">
+                                <div class="btns">
+                                    <button type="submit" class="btn btn-outline-light border mx-4 m-md-0 fw-bold">Submit</button>
+                                    <button type="button" class="btn btn-outline-light border mx-md-3 fw-bold" data-bs-toggle="modal" data-bs-target="#myModal">Read More</button>
+                                </div>
+                            </div>
                             <div class="modal fade" id="myModal" data-bs-backdrop="static">
                                 <div class="modal-dialog modal-dialog-centered" >
                                     <div class="modal-content">
