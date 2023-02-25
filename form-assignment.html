@@ -17,8 +17,11 @@
             height: 100vh;
         }
         @media screen and (max-width:600px){
+            body{
+                height: 125vh;
+            }
             .container{
-                height: 100vh;
+                height: 125vh;
                 display: flex;
                 align-items: center;
             }
@@ -33,21 +36,21 @@
   <main>
     <div class="container">
         <form action="">
-            <div class="row justify-content-center text-white p-md-5 m-0 form">
+            <div class="row justify-content-center text-white p-md-5 m-0 p-sm-0 form">
                 <div class="col-md-6 border border-white border-2 p-2 rounded" style="box-shadow: 6px 6px 30px -1px rgba(0,0,0,0.73);">
                     <div class="row pb-3">
-                        <div class="col-12">
+                        <div class="col-12 col-sm-12">
                             <label class="text-center d-block fw-bold fs-2" style="text-shadow: 5px 2px 7px black;">Registration Form</label>
                         </div>
                     </div>
                     <div class="row px-md-3 mt-2">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">First Name</label>
                                 <input type="text" class="form-control my-2" autofocus required>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Last Name</label>
                                 <input type="text" class="form-control my-2" required>
@@ -55,15 +58,15 @@
                         </div>
                     </div>
                     <div class="row px-md-3 mt-2">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Birth Date</label>
                                 <input type="date" class="form-control my-2"required >
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="form-group">
-                                <label for="" class="form-label fs-5 d-block fw-bold mb-3">Gender</label>
+                                <label for="" class="form-label fs-5 d-block fw-bold mb-md-3">Gender</label>
                                 <div class="form-check form-check-inline">
                                     <label for="" class="form-check-label fw-bold" style="font-size: 18px;">Male</label>
                                     <input type="radio" name="r1" id="" class="form-check-input my-2" style="cursor:pointer;font-size: 18px;" required>
@@ -75,14 +78,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-md-3 mt-2">
-                        <div class="col-6">
+                    <div class="row px-md-3 mt-md-2 mt-sm-0">
+                        <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Email</label>
                                 <input type="email" class="form-control my-2" required>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Contact No</label>
                                 <input type="number" class="form-control my-2" required>
@@ -93,10 +96,10 @@
                         <div class="col-12">
                             <div class="form-group mx-md-3">
                                 <label for="" class="form-label fs-5 fw-bold">Course Name</label>
-                                <select name="" id="" class="form-select" required>
+                                <select name="" id="" class="form-select" required style="cursor: pointer;">
                                     <option value="">--Select--</option>
                                     <option value="">Frontend developer</option>
-                                    <option value="">Backend develope</option>
+                                    <option value="">Backend developer</option>
                                     <option value="">MSC IT</option>
                                     <option value="">Taily</option>
                                 </select>
