@@ -25,6 +25,12 @@
                 display: flex;
                 align-items: center;
             }
+            .gender{
+                margin: 5px 0px;
+            }
+            .form-check-inline{
+                margin-left:10px;
+            }
         }
     </style>
 </head>
@@ -43,7 +49,7 @@
                             <label class="text-center d-block fw-bold fs-2" style="text-shadow: 5px 2px 7px black;">Registration Form</label>
                         </div>
                     </div>
-                    <div class="row px-md-3 mt-2">
+                    <div class="row px-md-3 mt-md-2 ">
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">First Name</label>
@@ -57,28 +63,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-md-3 mt-2">
+                    <div class="row px-md-3 mt-md-2">
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Birth Date</label>
                                 <input type="date" class="form-control my-2"required >
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6 col-sm-12 gender">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 d-block fw-bold mb-md-3">Gender</label>
                                 <div class="form-check form-check-inline">
-                                    <label for="" class="form-check-label fw-bold" style="font-size: 18px;">Male</label>
-                                    <input type="radio" name="r1" id="" class="form-check-input my-2" style="cursor:pointer;font-size: 18px;" required>
+                                    <label for="" class="form-check-label fw-bold my-md-1" style="font-size: 18px;">Male</label>
+                                    <input type="radio" name="r1" id="" class="form-check-input my-md-2" style="cursor:pointer;font-size: 18px;" required>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <label for="" class="form-check-label fw-bold" style="font-size: 18px;">Female</label>
-                                    <input type="radio" name="r1" id="" class="form-check-input my-2" style="cursor:pointer;font-size: 18px;" required>
+                                    <label for="" class="form-check-label fw-bold my-md-1" style="font-size: 18px;">Female</label>
+                                    <input type="radio" name="r1" id="" class="form-check-input my-md-2" style="cursor:pointer;font-size: 18px;" required>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row px-md-3 mt-md-2 mt-sm-0">
+                    <div class="row px-md-3 mt-md-2 mt-2">
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="" class="form-label fs-5 fw-bold">Email</label>
@@ -92,11 +98,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row my-2">
+                    <div class="row my-md-2 my-2">
                         <div class="col-12">
                             <div class="form-group mx-md-3">
                                 <label for="" class="form-label fs-5 fw-bold">Course Name</label>
-                                <select name="" id="" class="form-select" required style="cursor: pointer;">
+                                <select name="" id="" class="form-select mt-2" required style="cursor: pointer;">
                                     <option value="">--Select--</option>
                                     <option value="">Frontend developer</option>
                                     <option value="">Backend developer</option>
